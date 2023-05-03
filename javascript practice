@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+/*variables in javascript
+ 1.var
+ 2.consts
+ 3.let 
+ var x="hello vinu";
+ var x=12;
+ x="vun";
+ document.write(x);
+
+let x="hiii";
+let x="vvv"; error show
+x="hhhhh";
+
+ const x=123;
+document.writeln(x);
+
+ (2).data types in javascript
+1.string
+2.number
+3.boolean
+4.arry
+5.objecct
+6.null 
+var x="vinu";
+x=true;
+x="true"//it is string
+ 
+
+document.write(x);
+document.write("<br>");
+document.write(typeof x);//it was describe a x chu che string  
+(3).logical opretaor
+&& and
+|| or
+! not 
+if else if
+if(condition){
+    ye true hogi to yehi salegi baki check bhi nahi hogi
+} 
+else if(){
+    pehli true nahi he to e calegi 
+}
+else(){
+    dono true nahi he to yeto salegihi
+}
+
+(4)switch case:
+
+var age=14;
+switch (true) {
+    case (age<=15):
+        document.write("you are no eligible")
+        break;
+
+    default:
+        break;
+}
+
+
+(5).alerlt box in java script
+
+var a=12;
+var b=10;
+if (a<b) {
+    alert("b moto che");
+} else {
+    alert("a moto che");    //in a alert box we have assingh a ni value pan alert(a);
+    
+}
+
+(6).coform box
+
+var a= confirm("do you like your material");
+if (a) {
+    alert("thanks");
+}
+else{
+    alert("sorry");
+}
+
+(7).promt box
+var a= prompt("enter your name");
+  a=alert(a);
+
+document.write(alert(a));
+
+(8).function in javascript.
+function demo(){
+    var a=24;
+    var b=23;
+    document.write(a+b);
+}
+demo();
+document.write("<br>");
+document.write("<br>");
+demo();
+(9).function with parameter
+
+function divede(a,b){
+    document.write(a/b);
+}
+divede(50,2);
+
+function name(fname,lname){
+    document.write("hello" +fname +lname);
+}
+name("vinu","kamaliya");
+
+//(9).event in javascript.1 onclick event
+var a="hiii";
+function clickme()
+{
+    document.write(a);
+
+}
+
+//clickme();
+
+2.double click
+
+var name="kem cho!";
+function doub(){
+alert(name);
+}
+(3).oneneter mouse
+var name="kem cho!";
+function doub(){
+alert(name);}
+(4)ahiya onkeypres and windowevent khali body ni undar j lakhi sakiye
+
+var name="kem cho!";
+function doub(){
+alert(name);}
+(10).while loop we have write into html
+
+var a=1;
+while (a<=12) {
+    document.write("hii");
+    a=a+1;
+}
+(10).create array
+
+var arry = [10,20,30,40,50];
+
+for(var a=0; a<4; a++ ){
+    document.write("this is our arry"  + arry[1]+ "<br>");
+}
+(11).second way to create a arry in a javascript
+
+var ary = new Array();
+Ary[0]= 12;
+Ary[1]= 19;
+Ary[2]= 16;
+Ary[3]= 14;
+document.write("<ul>");
+document.write("<li>" + ary[2] + "<li>");
+    document.write("<ul>");
+(12).multi dimenstional ary
+
+var arry = [
+    ["vinu",12,"be",7.7],
+    ["ram,",12,"b.sc",9],
+    ["kanu",12,"ba",11],
+    ["jayesh",12,"baand",11],
+];
+document.write("<table border='1px',cellspacing='0'>");
+for(var a=0; a<arry.length; a++){
+    for( var b=0; b<arry.length; b++){
+document.write(arry[a][b] +" ");
+}
+document.write("<br>");
+}
+document.write("</table>")
+
+(13).how to modify and delete arry
+
+var arry= ["vinu",12,1212,12];
+arry[1]=5654;
+document.write(arry[1]); 
+
+var arry= ["vinu",12,1212,12];
+
+document.write(arry);
+delete [0]; 
+document.write(arry);
+(14).
+
+
+
+aray meathod   sort and revrsere
+var a=["vinu","ram","bhagirath","ahir"];
+document.write(a + "<br>");
+a.sort();
+document.write(a +" <br>");
+a.reverse();
+document.write(a+"<br>");
+
+push and pop
+
+var a =["ram","bharat","hello"];
+document.write(a+ "<br>");
+a.pop();
+
+document.write(a+ "<br>");
+a.push("ramayan");
+
+document.write(a+ "<br>");
+a.push("12");
+
+document.write(a+ "<br>");
+
+
+shift and unshift   shift che te array mathi 1st value delete kari nakhi 
+and unshift add kari nakhi
+
+
+var a=["meet","ram","hindu"];
+document.write(a);
+a.shift();
+document.write(a);
+
+a.unshift("dfhsdhfgshjdkgfs");
+document.write(a);
+
+concat and join method concat means 2 aary ne bhega kari nakhe
+
+var a=["hello","arjun","kem","cho"];
+var b= a.concat("hii");
+document.write(b);
+
+var a=["hello","arjun","kem","cho"];
+var b=["ajay",12];
+var c=b.concat(a);
+document.write(c);
+
+var a=["hello","arjun","kem","cho"];
+var b=["ajay",12];
+var c= a.join(b+"/");
+document.write(c);
+
+slice and splice 
+slice means arry ni andar thi aapde value katka rupe kathi sakiye
+splice means aaray ni under add kari sakiye values
+
+
+
+var a=["hello","arjun","kem","cho"];
+document.write(a + "<br>");
+ var b= a.slice(1,3);
+document.write(b);
+
+var a=["hello","arjun","kem","cho"];
+document.write(a);
+a.splice(1,0,"ahir","hanuman");//ahi 0 mean values ko delete bhi kar sakte he
+document.write(a);
+(is arry )meathod means aapde chek kari sakiye ke te array che ke nai
+
+
+var a=["hello","arjun","kem","cho"];
+document.write(a +"<br><br>");
+var b= Array.isArray(a);
+document.write(b);
+*(indexof) item aapde je gotvi hoy te gotine aape te item no index
+@lastindexof che te pan sem che but te last mathi saru thai
+indexof("searchitem", start)
+and jo aarray ma te item nai hoy to javab -1 aavse
+ example of index of
+var a=["hello","arjun","kem","cho"];
+document.write(a +"<br><br>");
+var b= a.indexOf("cho",0);
+document.write(b +"<br><br>");
+example of lastindex of
+
+var a=["hello","arjun","kem","cho"];
+document.write(a +"<br><br>");
+var b= a.lastIndexOf("arjun");
+document.write(b +"<br><br>");
+@include meathod te pan array mathi item che ke nai seacr kare and e javab ma true or false aape 
+
+
+var a=["hello","arjun","kem","cho"];
+document.write(a +"<br><br>");
+var b= a.includes("hello");
+document.write(b +"<br><br>");
+some()meathod it was very imp meathod for aapde some meathod no tyare use kari sakiye jayre aapde function banaviye
+te aary ni koi pan 1 value pan true hase to true aapse
+var ages = [12,14,12,12,13,5]
+document.write(ages + "<br>");
+var adult=ages.some(checkadult);
+document.write(adult);
+ function checkadult(kill) {
+    return kill>=18;
+ }
+* evry method(). every che te badhi j true hase to true aapse
+
+var ages = [12,14,12,12,13,5]
+document.write(ages + "<br>");
+var adult=ages.some(checkadult);
+document.write(adult);
+ function checkadult(kill) {
+    return kill>=1;
+ }
+*find and findofindex findof che te find kare and index che te index return kare
+
+var ages = [12,14,12,12,13,5]
+document.write(ages + "<br>");
+ var adult = ages.find(ram);
+ document.write(adult);
+ function ram(ag){
+    return ag<=13;
+ }
+#filter()meathod e che te pote aarray return kare je condition mathi pass kare te
+
+
+var ages = [12,14,12,12,13,5]
+document.write(ages + "<br>");
+var adult=ages.filter(checkadult);
+document.write(adult);
+ function checkadult(kill) {
+    return kill>=12;
+ }
+
+##to string te string ma convert kari nakhe aarry ne
+## fill() meathod che te aakha arry ma jyare value fill karvi hoy tyare use thai
+
+
+var a=[ram","ahir","king"];
+
+a.toString();
+document.write(a);
+
+##object in javascript
+
+var a= {
+    fname : 'vinu',
+    lname : 'kamaliya',
+    village :'bhaguda',
+    favmovies :["dhoom","krish","bhagi"],
+    sallary : function(){
+        return 23999;
+    },
+    liaving : {
+        city : 'bhaguda',
+        dist :'bhavnagar',
+    }
+
+}
+console.log(a);
+document.write(a.fname);
+document.write(a.sallary());
+document.write(a.liaving.city);
+document.write(a.favmovies[0]);
+
+##arry of object
+
+var person =[
+    {name:'vinu',gam:'bhaguda'},
+    {name:'vinu',gam:'bhaguda'},
+    {name:'vinu',gam:'bhaguda'},  
+    {name:'vinu',gam:'bhaguda'},
+]
+console.log(person);
+for (let a = 0; a < person.length; a++) {
+    document.write(person[a].name);
+    
+}
+##in a const var in object and array
+
+const a =[12,12,32,23,45];
+console.log(a);
+a[2] = 222;
+console.log(a);
+
+const b={
+    a=1
+    var a
+    c=6
+    let c
+    a=3
+    let b=1
+    b=2
+    g6tgt
+
+    name:'vinu',
+    village: 'bhaguda',
+};
+l
+console.log(b);
+b.name= 'ram';
+console.log(b);
+
+
+function(){
+    let a=19
+    function()
+}
+
+
+##   string meathod
+1. leaath
+
+var stri = "heloo fadssdaaaSASASASSaSA";
+document.write(stri);
+var b= stri.length;
+document.write(b);
+ 
+ var stri = "heloo fadssdaaaSASASASSaSA";
+ document.write(stri);
+ var b= stri.toLowerCase();
+ document.write(b);
+
+ var stri = "heloo fadssdaaaSASASASSaSA";
+ document.write(stri);
+ var b= stri.toUpperCase();
+ document.write(b);
+include
+meathod je che te string ni under te word search kare jo hoi to return true or false kare
+
+ 
+var string ="hello how are you kem cho tame";
+document.write(string);
+
+var b= string.includes("you");
+
+document.write(b);
+
+
+start with &&end with
+
+
+
+var string ="hello how are you kem cho tame";
+document.write(string);
+
+var b= string.startsWith("hello");
+document.write(b);
+
+var string ="hello how are you kem cho tame";
+document.write(string);
+
+var b= string.endsWith("hello");
+document.write(b);
+   
+search meathod je che te aane te key word retun kare teni index return kare
+
+var string ="hello how are you kem cho tame";
+document.write(string);
+document.write("<br>")
+var b= string.search("kem");
+document.write(b);
+
+ match
+  meathod che te aane te keyword retun kare exiting string no
+ahiya kem che te string ni under globlay check kare
+
+var string ="hello how are you kem cho kem  tame";
+document.write(string);
+document.write("<br>")
+var b= string.match(/kem/g);
+document.write(b);
+
+index of and last indexof
+
+
+var string ="hello how are you kem cho kem  tame";
+document.write(string);
+document.write("<br>")
+var b= string.indexOf("are");
+document.write(b);
+
+ 
+var string ="hello how are you kem cho kem  tame";
+document.write(string);
+document.write("<br>")
+var b= string.lastIndexOf("are");
+document.write(b);
+
+recle meathod che te change kari nakhe 
+
+var string ="hello how are you kem cho kem  tame";
+document.write(string);
+document.write("<br>")
+var b= string.replace(/are/g,"how");
+document.write(b);
+
+trim meathod je che te  jagya kathi nakhe
+
+
+var a="           hello how are you kem cho kem  tame          ";
+var b= a.trim();
+alert(b);
+
+
+char at meathod and 
+
+
+var string ="hello how are you kem cho kem  tame";
+document.write(string);
+document.write("<br>")
+var b= string.charAt(3);
+document.write(b);
+
+charcode and from carecodeat te abcd na asci return kare
+
+
+var string ="hello how are you kem cho kem  tame";
+document.write(string);
+document.write("<br>")
+var b= string.charCodeAt(2);
+document.write(b);
+
+concat je che te bhegu kari nakhe
+
+
+var str = "hello";
+ str1 = "ram";
+ str2= "hello";
+  var b= str.concat(str1,str2);
+  document.write(b);
+
+
+slitt meathod che te sring ne break athva to slit kare
+
+
+var str ="hello kem cho but are you ";
+
+var b= str.split(" ");
+document.write(b);
+
+reeat function jetli var re write karvi hoi etli var thai sake
+
+
+var str ="hello kem cho but are you ";
+
+var b= str.repeat(2);
+document.write(b);
+
+
+slice meathod je che te katko kathi sakiye
+
+
+var str ="hello kem cho but are you ";
+
+var b= str.slice(4,7);
+document.write(b);
+
+tostring te string ma convert kari nakhe
+
+var a= 54;
+var b =a.toString();
+document.write(b + 12);
+
+
+###nuber meathod start  ###
+
+
+var a= "55";
+
+var b= Number(a);
+
+document.write(b+ 1222);
+
+parseInt te je first value hoy tene int tarike return kare
+
+
+
+var a= "55 helloooo";
+
+var b= parseInt(a);
+
+document.write(b);
+
+parsefloat je che te oint an return kare
+
+
+var a= "55.33233";
+
+var b= parseFloat(a);
+
+document.write(b);
+
+
+
+
+var a= "122";
+ var b= Number.isInteger(a);
+ document.write(b);
+
+ to fixed ma aapde pont pasi jetla aakda fix kara hoi e kari sakiye ahi number ni meathod ma apde
+ pehla number lakhta but fixed ma jene fix karvanu hoi e lakhi sakiye
+
+var a= 12.123435;
+var b= a.toFixed(2);
+document.write(b);
+ 
+to presicion meathod je che ema jetla hoi tetle return kare
+
+var a =12.43232;
+ var numb = a.toPrecision(3);
+ document.write(numb);
+
+
+date ni metahod mate aapde pela teno object banavo pade pasi j aapde teno use kari sakiye
+@@ahiya dhyam e rakhvanu ke aapde pehala teno object banavo pade
+
+ var dates = new Date();
+
+ document.write(dates,"<br>");
+ document.write(dates.getDate());
+ document.write(dates.getDay());
+ document.write(dates.getFullYear());
+ document.write(dates.getHours());
+ document.write(dates.getMinutes());
+
+
+ ###  DOM  ### 
+*/
+ 
+
+</script>
+<!---- <button onclick="clickme()">clickme</button>
+ <p ondblclick="doub()"> double click me</p>
+ <p onmouseenter="doub()">arrow laiavo</p>
+-->
+</body>
+</html>
